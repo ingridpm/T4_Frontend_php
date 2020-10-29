@@ -9,7 +9,7 @@
                     document.getElementById("texto").innerHTML = contenido;
                     console.log(contenido);
                     json_peticion = JSON.stringify({contenido:contenido});
-                    let respuesta = fetch("http://localhost:4000/leerArchivo",{
+                    let respuesta = fetch("https://t4-backend.herokuapp.com/leerArchivo",{
                         method: 'POST',
                         body: json_peticion,
                         headers: {'Content-Type':'application/json'}                    
